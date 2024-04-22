@@ -9,7 +9,7 @@ Bitcoin is a decentralized digital currency that allows for peer-to-peer transac
 
 ## **Why is a Bitcoin DCA necessary?**
 
-In today's fiat currency system, central banks have the power to print money at will, which leads to inflation and devaluation of currencies. This devaluation erodes the purchasing power of money, making it difficult for individuals to save and invest. Bitcoin, on the other hand, is a decentralized and limited supply asset that is not subject to the whims of central banks. By investing in Bitcoin, individuals can protect their purchasing power and potentially increase their wealth over time.
+In today's fiat currency system, central banks have the power to print money at will, which leads to inflation and devaluation of currencies. This devaluation erodes the purchasing power of money, making it difficult for individuals to save and invest. Bitcoin, on the other hand, is a decentralized and limited supply asset that is not subject to the whims of central banks. By investing in Bitcoin, individuals can protect their purchasing power and increase their wealth over time.
 
 ## **What is a Bitcoin DCA?**
 
@@ -52,3 +52,6 @@ The tool will generate a CSV file `dca_purchases.csv` containing the simulated i
 ```
 $ pip install -r requirements.txt
 ```
+
+### Disclaimer
+This tool is for educational purposes only and is not intended to be taken as financial advice. However, any rational person should read a book or two about Bitcoin to understand the basics of sound money and the dangers of fiat currency.
