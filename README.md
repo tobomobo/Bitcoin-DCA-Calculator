@@ -1,10 +1,19 @@
 # Bitcoin DCA ROI Calculator
 
-#### Video Demo: https://www.youtube.com/watch?v=Rq1W2UBx4Po
-
-#### Description:
-
+## Description: 
 This is a command-line tool to calculate the ROI of a Bitcoin Dollar Cost Averaging (DCA) strategy. It uses historical Bitcoin prices from Yahoo Finance to simulate the investment and calculate the return on investment (ROI).
+
+## **What is Bitcoin?**
+
+Bitcoin is a decentralized digital currency that allows for peer-to-peer transactions without the need for intermediaries like banks. It's a store of value, a medium of exchange, and a unit of account. Bitcoin is not controlled by any government or institution, and its supply is capped at 21 million, making it a scarce asset. This scarcity, combined with its limited supply, makes it a valuable store of value.
+
+## **Why is a Bitcoin DCA necessary?**
+
+In today's fiat currency system, central banks have the power to print money at will, which leads to inflation and devaluation of currencies. This devaluation erodes the purchasing power of money, making it difficult for individuals to save and invest. Bitcoin, on the other hand, is a decentralized and limited supply asset that is not subject to the whims of central banks. By investing in Bitcoin, individuals can protect their purchasing power and potentially increase their wealth over time.
+
+## **What is a Bitcoin DCA?**
+
+A Bitcoin DCA is a strategy that involves investing a fixed amount of money in Bitcoin at regular intervals, regardless of the market price. This strategy helps to reduce the impact of market volatility and timing risks, as it eliminates the need to predict the market's direction. By investing regularly, individuals can take advantage of the power of compounding and potentially increase their returns over time.
 
 ### Usage
 
