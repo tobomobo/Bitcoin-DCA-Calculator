@@ -186,7 +186,7 @@ def plot_investment_vs_value():
         roi = calculate_roi()
         roi_str = f"ROI: {roi:.2f}%"
         total_investment_str = f"Nom. Investment: ${total_investment:.2f}"
-        total_sats_str = f"BTC Purchased: {total_sats:.0f}"
+        total_sats_str = f"Sats Purchased: {total_sats:.0f}"
         total_btc_str = f"BTC Purchased: {total_sats / 1e8:.8f}"
         total_buys_str = f"Number of Purchases: {total_buys}"
         current_value_str = f"Current Value: ${current_value_usd:.2f}"
