@@ -1,0 +1,5 @@
+yfinance
+tabulate
+requests
+matplotlib
+pytest
