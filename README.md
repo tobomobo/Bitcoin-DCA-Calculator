@@ -1,7 +1,5 @@
 # Bitcoin DCA ROI Calculator
 
-=====================
-
 #### Video Demo: https://www.youtube.com/watch?v=Rq1W2UBx4Po
 
 #### Description:
