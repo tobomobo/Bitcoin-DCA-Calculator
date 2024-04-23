@@ -216,6 +216,8 @@ class BitcoinDCA:
 def main():
     """
     The main function that parses command line arguments and runs the BitcoinDCA calculations.
+    If any of the arguments are not provided or are invalid, it prompts the user for input until valid input is provided.
+    It then creates a BitcoinDCA object, writes the data to a CSV file, prints the data in a tabulated format, and plots the investment versus value.
     """
     parser = argparse.ArgumentParser(description='Calculate the ROI of a Bitcoin DCA')
     parser.add_argument('-freq', '--frequency', choices=['daily', 'weekly', 'monthly'], default=None)
@@ -225,18 +227,29 @@ def main():
     args = parser.parse_args()
 
     frequency = args.frequency
-    investment_amount = args.investment_amount
-    fee = args.fee
-    duration = args.duration
+    while frequency not in ['daily', 'weekly', 'monthly']:
+        frequency = input("Please provide DCA frequency (Daily, Weekly, Monthly): ").lower()
 
-    if frequency is None:
-        frequency = input("Please provide DCA frequency (Daily, Weekly, Monthly): ")
-    if investment_amount is None:
-        investment_amount = float(input("Please provide DCA amount (positive number): "))
-    if fee is None:
-        fee = float(input("Exchange Fees in % (Format: 1% or 0.5%) excluding the % sign: "))
-    if duration is None:
-        duration = int(input("Please provide DCA Duration in months (positive number): "))
+    investment_amount = args.investment_amount
+    while not isinstance(investment_amount, float) or investment_amount <= 0:
+        try:
+            investment_amount = float(input("Please provide DCA amount (positive number): "))
+        except ValueError:
+            print("Invalid input. Please enter a positive number.")
+
+    fee = args.fee
+    while not isinstance(fee, float) or fee <= 0:
+        try:
+            fee = float(input("Exchange Fees in % (Format: 1% or 0.5%) excluding the % sign: "))
+        except ValueError:
+            print("Invalid input. Please enter a positive number.")
+
+    duration = args.duration
+    while not isinstance(duration, int) or duration <= 0:
+        try:
+            duration = int(input("Please provide DCA Duration in months (positive number): "))
+        except ValueError:
+            print("Invalid input. Please enter a positive number.")
 
     dca = BitcoinDCA(frequency, investment_amount, fee, duration)
     dca.write_csv()
