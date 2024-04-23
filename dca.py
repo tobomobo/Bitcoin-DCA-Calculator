@@ -174,7 +174,7 @@ class BitcoinDCA:
             total_sats_str = f"Sats Purchased: {total_sats:.0f}"
             total_btc_str = f"BTC Purchased: {total_sats / 1e8:.8f}"
 =======
-            total_sats_str = f"Sats Purchased: {total_sats:.0f} "
+            total_sats_str = f"Sats Purchased: {total_sats:.0f} sats"
             total_btc_str = f"BTC Purchased: {total_sats / 1e8:.8f} ₿"
 >>>>>>> Stashed changes
             total_buys_str = f"Number of Purchases: {total_buys}"
