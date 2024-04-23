@@ -170,8 +170,13 @@ class BitcoinDCA:
             roi, total_fees = self.calculate_roi()
             roi_str = f"ROI: {roi:.2f}%"
             total_investment_str = f"Nom. Investment: ${total_investment:.2f}"
+<<<<<<< Updated upstream
             total_sats_str = f"Sats Purchased: {total_sats:.0f}"
             total_btc_str = f"BTC Purchased: {total_sats / 1e8:.8f}"
+=======
+            total_sats_str = f"Sats Purchased: {total_sats:.0f} "
+            total_btc_str = f"BTC Purchased: {total_sats / 1e8:.8f} ₿"
+>>>>>>> Stashed changes
             total_buys_str = f"Number of Purchases: {total_buys}"
             total_fees_str = f"Total Fees: ${total_fees:.2f}"
             current_value_str = f"Current Value: ${current_value_usd:.2f}"
